@@ -1,0 +1,12 @@
+<h1>Book detail</h1>
+
+<!--ユーザー画像を入れないといけないまだ入れてない-->
+<!--ユーザーIDとリンクを入れないといけないまだ入れてない-->
+
+<p><%= @book.title %></p>
+
+<p><%= @book.body %></p>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>
+<!--↑変更しないといけない。仮でおいてるだけやで-->
+<%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "本当に消しますか？" %>

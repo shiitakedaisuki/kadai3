@@ -1,0 +1,7 @@
+<% @books.each do |book| %>
+<div>
+  <!--<p>本当は個々のユーザー画像にしないとダメ<%= image_tag 'no_image.jpg' %></p>-->
+  <p>title：<%= book.title %></p>
+  <p>opinion：<%= book.body %></p>
+</div>
+<% end %>
