@@ -1,7 +1,14 @@
-<% @books.each do |book| %>
-<div>
+<h1>Books</h1>
+
+  <% @books.each do |book| %>
+  
+    <div>
+      <table class="table table-striped">
   <!--<p>本当は個々のユーザー画像にしないとダメ<%= image_tag 'no_image.jpg' %></p>-->
-  <p>title：<%= book.title %></p>
-  <p>opinion：<%= book.body %></p>
-</div>
-<% end %>
+        <p>title<%=  link_to book.title, book_path(book) %></p>
+        <p>opinion<%= book.body %></p>
+      </table>
+    </div>
+ <% end %>
+
+
